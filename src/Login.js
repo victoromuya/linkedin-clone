@@ -56,10 +56,10 @@ function Login() {
       <img src="https://cdn.iconscout.com/icon/free/png-256/linkedin-47-189764.png?f=avif&w=128" alt="" />
 
     <form action="">
-      <input value={name} type="text" onChange={(e) => setName(e.target.value)} placeholder='full name' />
-      <input value={email} type="email" onChange={(e) => setEmail(e.target.value)} placeholder='Email'/>
-      <input value={profilePic} type="text" onChange={(e) => setprofilePic(e.target.value)} placeholder='Profile Photo Url'/>
-      <input value={password} type="password" onChange={(e) => setPassword(e.target.value)} placeholder='Password'/>
+      <input value={name} type="text" onChange={(e) => setName(e.target.value)} placeholder='Full name (required for registration)' />
+      <input value={email} type="email" onChange={(e) => setEmail(e.target.value)} placeholder='Email (required)'/>
+      <input value={profilePic} type="text" onChange={(e) => setprofilePic(e.target.value)} placeholder='Profile Photo Url (optional)'/>
+      <input value={password} type="password" onChange={(e) => setPassword(e.target.value)} placeholder='Password (required)' required/>
       <button type='submit' onClick={loginToApp}>Sign In</button>
     </form>
     <p className="">

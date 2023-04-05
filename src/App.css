@@ -2,6 +2,7 @@
     display: flex;
     background-color: #f3f2ef;
     flex-direction: column;
+ 
 }
 
 .app__body{
@@ -10,4 +11,5 @@
     max-width: 1700px;
     margin-left: 20px;
     margin-right: 20px;
+    align-content: center;
 }

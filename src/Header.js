@@ -8,7 +8,7 @@ import BusinessCenterIcon from '@material-ui/icons/BusinessCenter';
 import ChatIcon from '@material-ui/icons/Chat';
 import NotificationIcon from '@material-ui/icons/Notifications';
 import { logout } from './features/userSlice';
-import { auth } from './Firebase';
+import { auth } from './Firebase.js';
 import { useDispatch } from 'react-redux';
 
 
@@ -38,8 +38,7 @@ function Header() {
             <HeaderOption Icon={BusinessCenterIcon} title="Jobs"/>
             <HeaderOption Icon={ChatIcon} title="Messaging"/>
             <HeaderOption Icon={NotificationIcon} title="Notifications"/>
-            <HeaderOption avatar="https://media.licdn.com/dms/image/C4D03AQFdA836BxNrbw/profile-displayphoto-shrink_100_100/0/1659048133036?e=1684972800&v=beta&t=iWeaMQaL6QScs2h2ASPQFBKTtOD_e64OhgNzhtw-jck" 
-            title="Me" onClick={logoutOfApp}/>
+            <HeaderOption avatar={true} title="Me" onClick={logoutOfApp}/>
         </div>
       
     </div>
